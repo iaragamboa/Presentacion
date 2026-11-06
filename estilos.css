@@ -1,5 +1,5 @@
 :root{
-    --fondo: #f5f1fa;
+    --fondo: #d4baf3;
     --tarjeta: #ffffff;
     --texto: #2d2a32;
     --texto-suave: #6b6573;
@@ -93,6 +93,7 @@ ul {
    border: none;
    border-radius: 20px;
    color: var(black);
+   font-family: inherit;
    cursor: pointer;
    background-color: var(--acento);
 }
