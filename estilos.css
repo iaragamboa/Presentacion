@@ -1,0 +1,115 @@
+:root{
+    --fondo: #f5f1fa;
+    --tarjeta: #ffffff;
+    --texto: #2d2a32;
+    --texto-suave: #6b6573;
+    --acento: #8b5cf6;
+}
+body.oscuro{
+    --fondo: #17141c;
+    --tarjeta: #231f2b;
+    --texto: #f1edf7;
+    --texto-suave: #a9a1b5;
+    --acento: #a78bfa;
+}
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 40px 16px;
+    background-color: var(--fondo);
+    color: var(--texto);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+.tarjeta {
+    position: relative;
+    background-color: var(--tarjeta);
+    width: 100%;
+    max-width: 520px;
+    padding: 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+.cabecera {
+    text-align: center;
+    margin-bottom: 24px;
+}
+.cabecera img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--acento)
+}
+.cabecera h1{
+    margin: 12px 0 4px;
+}
+.rol{
+    margin: 0;
+    color: var(--texto-suave);
+}
+section {
+    margin-bottom: 20px;
+}
+h2 {
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--acento); 
+    margin-bottom: 8px;
+}
+ul {
+    margin: 0;
+    padding-left: 20px;
+}
+.etiquetas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+.etiquetas span {
+    background-color: var(--fondo);
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+}
+.contacto a {
+    color: var(--acento);
+    text-decoration: none;
+    margin-right: 16px;
+}
+.contacto a:hover {
+  text-decoration: underline;
+}
+#boton-tema {
+   display: block;
+   margin: 0 auto 20px;
+   padding: 8px 14px;
+   border: none;
+   border-radius: 20px;
+   color: var(black);
+   cursor: pointer;
+   background-color: var(--acento);
+}
+@media (min-width: 800px) {
+  .tarjeta {
+    max-width: 1000px;                 
+    display: grid;                     
+    grid-template-columns: 1fr 1fr;   
+    gap: 24px 48px;                    
+  }
+
+  .cabecera,
+  #boton-tema {
+    grid-column: 1 / -1;          
+  }
+  section {
+    margin-bottom: 0;
+  }
+
+}
