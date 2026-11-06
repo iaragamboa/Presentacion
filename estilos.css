@@ -87,15 +87,18 @@ ul {
   text-decoration: underline;
 }
 #boton-tema {
-   display: block;
-   margin: 0 auto 20px;
-   padding: 8px 14px;
-   border: none;
-   border-radius: 20px;
-   color: var(black);
-   font-family: inherit;
-   cursor: pointer;
-   background-color: var(--acento);
+  display: block;
+  margin: 0 auto 20px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 20px;
+  background-color: var(--acento);
+  color: white;
+  -webkit-text-fill-color: white; 
+  -webkit-appearance: none;        
+  appearance: none;
+  font-family: inherit;
+  cursor: pointer;
 }
 @media (min-width: 800px) {
   .tarjeta {
@@ -112,5 +115,8 @@ ul {
   section {
     margin-bottom: 0;
   }
-
+a[x-apple-data-detectors] {
+  color: inherit !important;
+  text-decoration: none !important;
+}
 }
